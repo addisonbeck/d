@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+source $DOTFILES_EX_DIR/installers/installers-core
+
+install_delta () {
+  install_package git-delta
+}
+
+if ! command -v delta
+then
+  install_delta
+fi
+
+

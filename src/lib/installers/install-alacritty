@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+source $DOTFILES_EX_DIR/installers/installers-core
+
+install_alacritty () {
+  install_package alacritty
+}
+
+install_alacritty
+

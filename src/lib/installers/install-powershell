@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+source $DOTFILES_EX_DIR/installers/installers-core
+
+install_powershell () {
+  if [[ "$PACKAGEMANAGER" == "pacman" ]]; then
+    cd ~
+    git clone https://aur.archlinux.org/powershell-bin.git
+    cd powershell-bin
+    makepkg -sirc
+  fi
+}
+
+install_powershell

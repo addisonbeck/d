@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+source $DOTFILES_EX_DIR/installers/installers-core
+
+install_azure_data_studio () {
+  if [[ "$PACKAGEMANAGER" == "pacman" ]]; then
+    cd ~
+    git clone https://aur.archlinux.org/azuredatastudio-bin.git
+    cd azuredatastudio-bin
+    makepkg -sirc
+  fi
+}
+
+install_azure_data_studio

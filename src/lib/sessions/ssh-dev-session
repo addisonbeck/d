@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+source $HOME/bin/sessions/core-session
+
+PROJECT_PATH="${HOME}"
+SESSION_PREFIX="📡"
+SESSION_NAME="ssh → dev"
+HOSTNAME="dev"
+IDENTITY="$HOME/.ssh/$(hostname)"

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+source dev-core
+
+SESSION_PREFIX="🚮"
+SESSION_NAME="scratchpad"
+STARTER_COMMAND="fish"
+WINDOW_NAME="run"
+
+ensure_command_installed tmux
+kill_session_if_exists
+start_session

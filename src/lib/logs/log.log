@@ -1,0 +1,110 @@
+Fri Aug 30 06:43:45 EDT 2024 WARNING: clients not found - cloning
+Fri Aug 30 06:47:21 EDT 2024 WARNING: server not found - cloning
+Fri Aug 30 06:48:27 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Containers" with window "MSSQL Build"
+Fri Aug 30 06:49:40 EDT 2024 WARNING: clients not found - cloning
+Fri Aug 30 06:51:59 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 06:51:59 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: MSSQL Build" is already running.
+Fri Aug 30 06:52:00 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 06:52:00 EDT 2024 SUCCESS: Starting window "Mail Build" in session "🛡️ ▶ BW Containers"
+Fri Aug 30 06:52:00 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 06:52:00 EDT 2024 SUCCESS: Starting window "Azurite Build" in session "🛡️ ▶ BW Containers"
+Fri Aug 30 06:52:00 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Server" with window "Api Build"
+Fri Aug 30 06:52:00 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 06:52:00 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: MSSQL Build" is already running.
+Fri Aug 30 06:52:00 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 06:52:00 EDT 2024 SUCCESS: Starting window "Mail Build" in session "🛡️ ▶ BW Containers"
+Fri Aug 30 06:52:00 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 06:52:00 EDT 2024 SUCCESS: Starting window "Azurite Build" in session "🛡️ ▶ BW Containers"
+Fri Aug 30 06:52:00 EDT 2024 INFO: Session "🛡️ ▶ BW Server" is already running.
+Fri Aug 30 06:52:00 EDT 2024 SUCCESS: Starting window "Identity Build" in session "🛡️ ▶ BW Server"
+Fri Aug 30 06:52:00 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Clients" with window "W Build"
+Fri Aug 30 06:53:43 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 06:53:43 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: MSSQL Build" is already running.
+Fri Aug 30 06:53:43 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 06:53:43 EDT 2024 SUCCESS: Starting window "Mail Build" in session "🛡️ ▶ BW Containers"
+Fri Aug 30 06:53:43 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 06:53:43 EDT 2024 SUCCESS: Starting window "Azurite Build" in session "🛡️ ▶ BW Containers"
+Fri Aug 30 06:53:43 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Server" with window "Api Build"
+Fri Aug 30 06:53:43 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 06:53:43 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: MSSQL Build" is already running.
+Fri Aug 30 06:53:43 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 06:53:43 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: Mail Build" is already running.
+Fri Aug 30 06:53:43 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 06:53:43 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: Azurite Build" is already running.
+Fri Aug 30 06:53:43 EDT 2024 INFO: Session "🛡️ ▶ BW Server" is already running.
+Fri Aug 30 06:53:43 EDT 2024 SUCCESS: Starting window "Identity Build" in session "🛡️ ▶ BW Server"
+Fri Aug 30 06:53:43 EDT 2024 INFO: Session "🛡️ ▶ BW Clients" is already running.
+Fri Aug 30 06:53:43 EDT 2024 INFO: Window "🛡️ ▶ BW Clients: W Build" is already running.
+Fri Aug 30 06:55:13 EDT 2024 WARNING: clients not found - cloning
+Fri Aug 30 06:57:02 EDT 2024 WARNING: server not found - cloning
+Fri Aug 30 06:58:45 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Containers" with window "MSSQL Build"
+Fri Aug 30 07:00:45 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 07:00:45 EDT 2024 SUCCESS: Starting window "Azurite Build" in session "🛡️ ▶ BW Containers"
+Fri Aug 30 07:02:03 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 07:02:03 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: MSSQL Build" is already running.
+Fri Aug 30 07:02:03 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 07:02:03 EDT 2024 SUCCESS: Starting window "Mail Build" in session "🛡️ ▶ BW Containers"
+Fri Aug 30 07:02:03 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 07:02:03 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: Azurite Build" is already running.
+Fri Aug 30 07:02:03 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Server" with window "Api Build"
+Fri Aug 30 07:02:03 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 07:02:03 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: MSSQL Build" is already running.
+Fri Aug 30 07:02:03 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 07:02:03 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: Mail Build" is already running.
+Fri Aug 30 07:02:03 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Fri Aug 30 07:02:03 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: Azurite Build" is already running.
+Fri Aug 30 07:02:03 EDT 2024 INFO: Session "🛡️ ▶ BW Server" is already running.
+Fri Aug 30 07:02:03 EDT 2024 SUCCESS: Starting window "Identity Build" in session "🛡️ ▶ BW Server"
+Fri Aug 30 07:02:03 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Clients" with window "W Build"
+Fri Aug 30 10:21:41 EDT 2024 INFO: Session "🛡️ ▶ BW Server" is already running.
+Fri Aug 30 10:21:41 EDT 2024 SUCCESS: Starting window "Git" in session "🛡️ ▶ BW Server"
+Fri Aug 30 10:21:41 EDT 2024 INFO: Session "🛡️ ▶ BW Server" is already running.
+Fri Aug 30 10:21:41 EDT 2024 SUCCESS: Starting window "Editor" in session "🛡️ ▶ BW Server"
+Fri Aug 30 11:12:43 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Server" with window "Git"
+Fri Aug 30 11:12:43 EDT 2024 INFO: Session "🛡️ ▶ BW Server" is already running.
+Fri Aug 30 11:12:43 EDT 2024 SUCCESS: Starting window "Editor" in session "🛡️ ▶ BW Server"
+Fri Aug 30 11:12:51 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Server" with window "Git"
+Fri Aug 30 11:12:52 EDT 2024 INFO: Session "🛡️ ▶ BW Server" is already running.
+Fri Aug 30 11:12:52 EDT 2024 SUCCESS: Starting window "Editor" in session "🛡️ ▶ BW Server"
+Tue Sep  3 14:00:36 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Containers" with window "MSSQL Build"
+Tue Sep  3 14:00:36 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Tue Sep  3 14:00:36 EDT 2024 SUCCESS: Starting window "Mail Build" in session "🛡️ ▶ BW Containers"
+Tue Sep  3 14:00:37 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Tue Sep  3 14:00:37 EDT 2024 SUCCESS: Starting window "Azurite Build" in session "🛡️ ▶ BW Containers"
+Tue Sep  3 14:00:37 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Server" with window "Api Build"
+Tue Sep  3 14:00:37 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Tue Sep  3 14:00:37 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: MSSQL Build" is already running.
+Tue Sep  3 14:00:37 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Tue Sep  3 14:00:37 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: Mail Build" is already running.
+Tue Sep  3 14:00:37 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Tue Sep  3 14:00:37 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: Azurite Build" is already running.
+Tue Sep  3 14:00:37 EDT 2024 INFO: Session "🛡️ ▶ BW Server" is already running.
+Tue Sep  3 14:00:37 EDT 2024 SUCCESS: Starting window "Identity Build" in session "🛡️ ▶ BW Server"
+Tue Sep  3 14:00:37 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Clients" with window "W Build"
+Tue Sep  3 14:01:32 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: MSSQL Build" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: Mail Build" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: Azurite Build" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Session "🛡️ ▶ BW Server" is already running.
+Tue Sep  3 14:01:32 EDT 2024 SUCCESS: Starting window "Api Build" in session "🛡️ ▶ BW Server"
+Tue Sep  3 14:01:32 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: MSSQL Build" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: Mail Build" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Session "🛡️ ▶ BW Containers" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Window "🛡️ ▶ BW Containers: Azurite Build" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Session "🛡️ ▶ BW Server" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Window "🛡️ ▶ BW Server: Identity Build" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Session "🛡️ ▶ BW Clients" is already running.
+Tue Sep  3 14:01:32 EDT 2024 INFO: Window "🛡️ ▶ BW Clients: W Build" is already running.
+Sun Sep  8 16:36:38 EDT 2024 SUCCESS: Starting session "📝 ▶ Notes" with window "Write"
+Tue Sep 10 18:15:10 EDT 2024 SUCCESS: Starting session "📝 ▶ Notes" with window "Write"
+Tue Sep 10 18:19:55 EDT 2024 SUCCESS: Starting session "🧿 ▶ Dotfiles" with window "Editor"
+Tue Sep 10 18:19:55 EDT 2024 INFO: Session "🧿 ▶ Dotfiles" is already running.
+Tue Sep 10 18:19:55 EDT 2024 INFO: Starting window "Git" in session "🧿 ▶ Dotfiles"
+Tue Sep 10 18:23:08 EDT 2024 INFO: Session "🧿 ▶ Dotfiles" is already running.
+Tue Sep 10 18:23:08 EDT 2024 INFO: Starting window "Terminal" in session "🧿 ▶ Dotfiles"
+Wed Sep 11 15:32:54 EDT 2024 SUCCESS: Starting session "⚡️ ▶ GitHub" with window "Dash"
+Thu Sep 12 12:44:56 EDT 2024 SUCCESS: Starting session "🛡️ ▶ BW Clients" with window "Editor"

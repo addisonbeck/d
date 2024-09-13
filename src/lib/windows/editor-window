@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+source $HOME/bin/windows/windows-core ${1}
+
+if [ $SUPPORTS_EDITING == false ]
+then
+  log_error "$PROJECT_NAME does not support editing."
+  exit 1
+fi
+
+if [ -z "$EDITOR_WINDOW_NAME" ]
+then
+  WINDOW_NAME="Editor"
+else
+  WINDOW_NAME="${EDITOR_WINDOW_NAME}"
+fi
+
+STARTER_COMMAND="cd ${PROJECT_PATH}; $EDITOR"
+
+if [ "${EDITOR}" == "nvim" ]; then
+  ensure_command_installed nvim
+fi
+
+if [ "${EDITOR}" == "vim" ]; then
+  ensure_command_installed vim
+fi
+
+start_window
+

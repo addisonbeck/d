@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+source $DOTFILES_EX_DIR/installers/installers-core
+
+install_vim () {
+  install_package vim
+}
+
+install_vim

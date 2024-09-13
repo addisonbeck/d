@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+d h
+d n -e -g
+d . -e -g
+
+if [[ "$(hostname)" == "bw" || "$(hostname)" == "mac" ]]; then
+  d ssh -d
+else
+  b -e -g binwarden
+  d gh
+fi
+
+tmux a -t @0

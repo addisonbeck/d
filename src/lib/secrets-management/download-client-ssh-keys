@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+export BITWARDENCLI_APPDATA_DIR=~/.config/bw-p
+export BW_CLIENTID=$BW_CLIENTID_PERSONAL
+export BW_CLIENTSECRET=$BW_CLIENTSECRET_PERSONAL
+export BW_MP=$BW_MP_PERSONAL
+
+login_to_bw () {
+  bw logout
+  bw login --apikey
+  bw sync
+  BW_SESSION=$(bw unlock --passwordenv BW_MP --raw)
+}
+
+save_secrets () {
+  bw get attachment $(hostname) --itemid ac755655-4d35-44bf-9bfc-b0ce013407c6 --session $BW_SESSION
+  bw get attachment $(hostname).pub --itemid ac755655-4d35-44bf-9bfc-b0ce013407c6 --session $BW_SESSION
+  bw get attachment nomachine --itemid ac755655-4d35-44bf-9bfc-b0ce013407c6 --session $BW_SESSION
+  bw get attachment nomachine.pub --itemid ac755655-4d35-44bf-9bfc-b0ce013407c6 --session $BW_SESSION
+  bw get attachment general --itemid ac755655-4d35-44bf-9bfc-b0ce013407c6 --session $BW_SESSION
+  bw get attachment general.pub --itemid ac755655-4d35-44bf-9bfc-b0ce013407c6 --session $BW_SESSION
+  sudo mv $(hostname) $HOME/.ssh 
+  sudo mv $(hostname).pub $HOME/.ssh 
+  sudo mv nomachine $HOME/.ssh 
+  sudo mv nomachine.pub $HOME/.ssh 
+  sudo mv general $HOME/.ssh 
+  sudo mv general.pub $HOME/.ssh 
+}
+
+login_to_bw
+save_secrets

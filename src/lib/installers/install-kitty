@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+source $DOTFILES_EX_DIR/installers/installers-core
+
+install_kitty () {
+  install_package kitty
+}
+
+install_kitty
