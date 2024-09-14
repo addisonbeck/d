@@ -15,6 +15,7 @@ in stdenv.mkDerivation {
   installPhase = ''
     mkdir -p $out/d/
     cp -r $src $out/d
+    install -D $src/bin/d $out/d/bin/d
   '';
 
   postFixup = ''
