@@ -13,10 +13,11 @@ in stdenv.mkDerivation {
   buildPhase = "";
 
   installPhase = ''
-    cp -r $src $out
+    mkdir -p $out/d/
+    cp -r $src $out/d
   '';
 
   postFixup = ''
-     wrapProgram $out/bin/d --prefix PATH : $out/bin
+     wrapProgram $out/d/bin/d --prefix PATH : $out/bin
   '';
 }
