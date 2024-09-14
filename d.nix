@@ -16,7 +16,7 @@ in stdenv.mkDerivation {
     cp -r $src $out
   '';
 
-  # postFixup = ''
-  #   wrapProgram $out/bin/d --prefix PATH : $out/bin
-  # '';
+  postFixup = ''
+     wrapProgram $out/bin/d --prefix PATH : $out/bin
+  '';
 }
