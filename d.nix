@@ -15,6 +15,7 @@ in stdenv.mkDerivation {
   '';
 
   postInstall = ''
-    wrapProgram $out/d/bin/d --prefix PATH : $out/bin
+    mkdir -p $out/bin
+    ln -fs "$out/d/bin/d" $out/bin/d
   '';
 }
