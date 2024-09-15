@@ -1,4 +1,4 @@
-{ stdenv, pkgs }:
+{ stdenv }:
 
 let version = "0.0.1";
 in stdenv.mkDerivation {
@@ -7,18 +7,11 @@ in stdenv.mkDerivation {
 
   src = ./src;
 
-  nativeBuildInputs = [ ];
-  buildInputs = [ pkgs.makeWrapper ];
-
-  buildPhase = "";
+  phases = [ "unpackPhase" "installPhase" ];
 
   installPhase = ''
-    mkdir -p $out/d/
-    cp -r $src $out/d
-    install -D $src/bin/d $out/d/bin/d
-  '';
-
-  postFixup = ''
-     wrapProgram $out/d/bin/d --prefix PATH : $out/bin
+    mkdir -p $out/bin
+    cp -r $src/lib $out/
+    install -D $src/bin/d $out/bin
   '';
 }
