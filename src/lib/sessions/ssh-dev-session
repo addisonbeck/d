@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-source $APPLICATION_LIB_DIR/sessions/core-session
-
-PROJECT_PATH="${HOME}"
-SESSION_PREFIX="📡"
-SESSION_NAME="ssh → dev"
-HOSTNAME="dev"
-IDENTITY="$HOME/.ssh/$(hostname)"

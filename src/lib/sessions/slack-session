@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-source $APPLICATION_LIB_DIR/sessions/comms-session
-
-RUN_WINDOW_NAME="Slack"
-RUN_COMMAND="weechat"
-
-ensure_command_installed weechat

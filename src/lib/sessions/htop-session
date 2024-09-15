@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-source $APPLICATION_LIB_DIR/sessions/home-session
-
-RUN_WINDOW_NAME="htop"
-RUN_COMMAND="htop"
-
-ensure_command_installed htop

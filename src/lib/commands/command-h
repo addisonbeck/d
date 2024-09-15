@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-$APPLICATION_LIB_DIR/windows/run-window neofetch
-$APPLICATION_LIB_DIR/windows/run-window htop
-$APPLICATION_LIB_DIR/windows/run-window scratchpad

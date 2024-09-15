@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-$APPLICATION_LIB_DIR/installers/provision-${1}
