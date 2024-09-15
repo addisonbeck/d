@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-source $HOME/bin/windows/windows-core ${1}
+source $APPLICATION_LIB_DIR/windows/windows-core ${1}
+
 
 if [ $SUPPORTS_EDITING == false ]
 then

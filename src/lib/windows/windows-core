@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source $HOME/bin/sessions/${1}-session
+source $APPLICATION_LIB_DIR/sessions/${1}-session
 
 export WINDOW_NAME="unnamed window"
 export STARTER_COMMAND="echo 'No command specified!'"

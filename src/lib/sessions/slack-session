@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source $HOME/bin/sessions/comms-session
+source $APPLICATION_LIB_DIR/sessions/comms-session
 
 RUN_WINDOW_NAME="Slack"
 RUN_COMMAND="weechat"
