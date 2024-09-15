@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-$HOME/bin/windows/run-window gh-dash
+$APPLICATION_LIB_DIR/windows/run-window gh-dash

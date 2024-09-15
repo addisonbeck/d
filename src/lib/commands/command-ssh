@@ -21,11 +21,11 @@ done
 
 if [ -n "$DEV" ] 
 then
-  $HOME/bin/windows/ssh-window ssh-dev
+  $APPLICATION_LIB_DIR/windows/ssh-window ssh-dev
 fi
 
 if [ -n "$NIX" ] 
 then
-  $HOME/bin/windows/ssh-window ssh-nix
+  $APPLICATION_LIB_DIR/windows/ssh-window ssh-nix
 fi
 

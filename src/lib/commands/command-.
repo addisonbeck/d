@@ -27,15 +27,15 @@ done
 
 if [ $EDIT ] 
 then
-  $HOME/bin/windows/editor-window dotfiles
+  $APPLICATION_LIB_DIR/windows/editor-window dotfiles
 fi
 
 if [ $GIT ] 
 then
-  $HOME/bin/windows/git-window dotfiles
+  $APPLICATION_LIB_DIR/windows/git-window dotfiles
 fi
 
 if [ $TERMINAL ] 
 then
-  $HOME/bin/windows/terminal-window dotfiles
+  $APPLICATION_LIB_DIR/windows/terminal-window dotfiles
 fi

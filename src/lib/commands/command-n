@@ -23,10 +23,10 @@ done
 
 if [ $EDIT ] 
 then
-  $HOME/bin/windows/editor-window notes
+  $APPLICATION_LIB_DIR/windows/editor-window notes
 fi
 
 if [ $GIT ] 
 then
-  $HOME/bin/windows/git-window notes
+  $APPLICATION_LIB_DIR/windows/git-window notes
 fi
