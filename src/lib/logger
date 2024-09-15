@@ -98,7 +98,7 @@ function log_error () {
 }
 
 log_to_file () {
-  mkdir -p $APPLICATION_LIB_DIR/logs
-  [[ -f $APPLICATION_LIB_DIR/logs/log.log ]] || touch $APPLICATION_LIB_DIR/logs/log.log
-  echo "$(date) ${PREFIX}: ${1}" >> $APPLICATION_LIB_DIR/logs/log.log
+  mkdir -p $HOME/logs
+  [[ -f $HOME/logs/d.log ]] || touch $HOME/logs/d.log
+  echo "$(date) ${PREFIX}: ${1}" >> $HOME/logs/d.log
 }
