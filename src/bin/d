@@ -9,9 +9,6 @@ done
 APPLICATION_LIB_DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && cd -P ../lib >/dev/null 2>&1 && pwd )
 
 function process_command () {
-  echo "COMMAND: ${COMMAND}"
-  echo "ARGS: ${ARGS[@]}"
-
   if [ -z "$COMMAND" ]
   then
     #log_error "No command specified"
