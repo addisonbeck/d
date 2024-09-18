@@ -14,6 +14,11 @@ do
       shift
       ;;
 
+    x|terminal )
+      TERMINAL="true"
+      shift
+      ;;
+
     *)
       echo "Option ${1} is not supported by this command"
       shift
@@ -29,4 +34,9 @@ fi
 if [ $GIT ] 
 then
   $APPLICATION_LIB_DIR/windows/git-window notes
+fi
+
+if [ $TERMINAL ] 
+then
+  $APPLICATION_LIB_DIR/windows/terminal-window notes
 fi
