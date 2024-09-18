@@ -1,0 +1,10 @@
+[[global]]
+editor_command = "nvim"
+git_command = "lazygit"
+shell_command = "fish"
+logging_level = "verbose"
+
+[[repos]]
+author = "addisonbeck"
+name = "notes"
+path = "$HOME/notes"

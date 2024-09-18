@@ -1,0 +1,15 @@
+[package]
+authors = ["Addison Beck <hello@addisonbeck.com>"]
+edition = "2021"
+# If you change the name here, you must also do it in flake.nix (and run `cargo generate-lockfile` afterwards)
+name = "d"
+description = "A simple Rust project using Nix"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+clap = { version = "4.3.14", features = ["derive"] }
+anyhow = "1.0"
+confy = "0.6.1"
+serde = "1.0.210"
+serde_derive = "1.0.210"
