@@ -10,6 +10,6 @@ version = "0.1.0"
 [dependencies]
 clap = { version = "4.3.14", features = ["derive"] }
 anyhow = "1.0"
-confy = "0.6.1"
 serde = "1.0.210"
 serde_derive = "1.0.210"
+toml = "0.8.19"

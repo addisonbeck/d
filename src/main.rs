@@ -1,5 +1,5 @@
 // Clap is a crate used to parse CLI inputs
-use std::{env, process::Command, process::Stdio};
+use std::{fs, env, process::Command, process::Stdio};
 use clap::{Args, Parser, Subcommand};
 use anyhow::Result;
 use serde_derive::{Serialize, Deserialize};
@@ -13,10 +13,10 @@ enum LoggingLevel {
 
 #[derive(Default, Debug, Serialize, Deserialize)]
 struct GlobalConfiguration {
-    logging_level: LoggingLevel,
-    git_command: String,
-    edit_command: String,
-    shell_command: String
+    logging_level: Option<LoggingLevel>,
+    git_command: Option<String>,
+    edit_command: Option<String>,
+    shell_command: Option<String>
 }
 
 #[derive(Default, Debug, Serialize, Deserialize)]
@@ -28,8 +28,8 @@ struct RepositoryConfiguration {
 
 #[derive(Default, Debug, Serialize, Deserialize)]
 struct Configuration {
-    globals: GlobalConfiguration,
-    repositories: Vec<RepositoryConfiguration>
+    global: Option<GlobalConfiguration>,
+    repos: Option<Vec<RepositoryConfiguration>>
 }
 
 // The derive attribute allows new items to be automatically generated for data structures.
@@ -38,6 +38,8 @@ struct Configuration {
 pub struct InputArguements {
     #[arg(short = 'v', long = "verbose")]
     verbose: bool,
+    #[arg(short = 'c', long = "config")]
+    config: Option<String>,
     #[command(subcommand)]
     command: Option<ValidSubcommands>,
 }
@@ -59,11 +61,40 @@ pub struct NotesSubcommand {
 }
 
 fn main() -> Result<()> {
-    let cfg: Configuration = confy::load("d", None).unwrap();
+    // Deserialize input arguments from the command line
     let input_arguements = InputArguements::parse();
     if input_arguements.verbose {
         println!("DEBUG: `main()` called. Arguements: {input_arguements:?}");
     }
+
+    // Deserialzize the configuration file
+    let home_path = &fetch_home_environment_variable(input_arguements.verbose).unwrap();
+    let config_file_path = input_arguements
+        .config
+        .unwrap_or(format!("{home_path}/.config/d/config.toml").to_string());
+
+    if input_arguements.verbose {
+        println!("DEBUG: preparing to load config file. Path: {config_file_path}");
+    }
+
+    let config_str = fs::read_to_string(config_file_path).unwrap_or_default();
+
+    if input_arguements.verbose {
+        println!("DEBUG: config file loaded to string. Value: {config_str}");
+    }
+
+    let  config: Configuration = toml::from_str(&config_str)
+        //.unwrap_or_default();
+        .expect("This did not work");
+
+    let globals_config = config.global.unwrap_or_default();
+    let _logging_level_config = globals_config.logging_level.unwrap_or_default();
+
+    if input_arguements.verbose {
+        println!("DEBUG: config file deserialized to a rust object. Value: {config:#?}");
+    }
+
+    // TODO: Merge them into a `Command` type structure???
 
     match input_arguements.command {
         Some(ValidSubcommands::NotesSubcommand(args)) => {
@@ -122,7 +153,7 @@ fn handle_notes_subcommand(args: NotesSubcommand, verbose_logging_enabled: bool)
 fn spawn_tmux_session(session_name: &str, window_name: &str, startup_command: &str, verbose_logging_enabled: bool) -> Result<()> {
     // TODO: Also check if window is already running?
     if check_if_tmux_session_is_already_spawned(session_name, verbose_logging_enabled).unwrap() {
-        spawn_tmux_window(session_name, window_name, startup_command, verbose_logging_enabled);
+        let _ = spawn_tmux_window(session_name, window_name, startup_command, verbose_logging_enabled);
         return Ok(())
     }
 
@@ -181,6 +212,19 @@ fn spawn_tmux_window(session_name: &str, window_name: &str, startup_command: &st
         .output() // TODO: ???
         .unwrap_or_else(|_| panic!("Failed to execute the tmux command!"));
     Ok(())
+}
+
+fn fetch_home_environment_variable(verbose_logging_enabled: bool) -> Result<String> {
+    if verbose_logging_enabled {
+        println!("DEBUG: `Checking $HOME` value.");
+    }
+
+    let home = env::var("HOME").unwrap_or_else(|_| panic!("Home not found."));
+    if verbose_logging_enabled {
+        println!("DEBUG: `$HOME` value checked. Value: {home:?}");
+    }
+
+    Ok(home)
 }
 
 fn fetch_editor_environment_variable(verbose_logging_enabled: bool) -> Result<String> {
