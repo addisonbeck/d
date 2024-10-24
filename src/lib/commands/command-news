@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+$APPLICATION_LIB_DIR/windows/run-window newsboat

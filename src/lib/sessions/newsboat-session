@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+source $APPLICATION_LIB_DIR/sessions/core-session
+
+SUPPORTS_RUNNING=true
+SUPPORTS_TERMINAL=true
+
+PROJECT_PATH="${HOME}"
+SESSION_PREFIX="🗞️"
+SESSION_NAME="News"
+
+RUN_WINDOW_NAME="News"
+RUN_COMMAND="newsboat"
+
+ensure_command_installed newsboat
+
