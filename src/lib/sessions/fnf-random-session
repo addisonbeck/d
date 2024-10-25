@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+source $APPLICATION_LIB_DIR/sessions/core-session
+
+SUPPORTS_EDITING=true
+SUPPORTS_GIT=true
+SUPPORTS_TERMINAL=true
+
+PROJECT_PATH="${HOME}/fnf-random"
+SESSION_PREFIX="🎤"
+SESSION_NAME="fnf-random"
+
+ensure_repo_cloned fnf-random
