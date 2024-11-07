@@ -6,8 +6,6 @@ SUPPORTS_EDITING=true
 SUPPORTS_GIT=true
 SUPPORTS_TERMINAL=true
 
-PROJECT_PATH="${HOME}/fnf-random"
-SESSION_PREFIX="🎤"
-SESSION_NAME="fnf-random"
-
-ensure_repo_cloned fnf-random
+PROJECT_PATH="${HOME}/where-am-i.nvim"
+SESSION_PREFIX="🗃️"
+SESSION_NAME="where-am-i.nvim"
